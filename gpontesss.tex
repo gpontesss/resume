@@ -1,0 +1,159 @@
+% !TEX program = xelatex
+
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[sfdefault]{roboto}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=2.5cm]{geometry}
+
+% Secondary color
+\definecolor{sec}{gray}{0.2}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[{\titlerule[1pt]}]
+
+% Horizontal rule command
+\newcommand{\hr}{
+    \noindent\parbox{\linewidth}{\rule[5pt]{\textwidth}{1pt}}%
+}
+
+\renewcommand{\maketitle}{
+    \noindent
+    {\Large\bfseries\theauthor} \\
+    {\large\color{sec}{\thetitle}} \\
+    \hr
+}
+
+\begin{document}
+
+\author{Guilherme Pontes}
+\title{Desenvolvedor de software}
+
+\maketitle
+% Address and contact information
+\begin{multicols}{2}
+    \noindent%
+    \begin{flushleft}
+        \noindent%
+        Endereço \\
+        \color{sec}{
+            Rua Antônio Rosa Machado \\
+            Vila Campo Grande \\
+            São Paulo, SP \\
+            19 anos
+        }
+    \end{flushleft}
+    \columnbreak
+    \begin{flushright}
+        \noindent
+        Contato \\
+        \color{sec}{
+            +55 11 99213-9309 \\
+            pontes.guisilva@gmail.com \\
+            linkedin.com/in/gpontesss \\
+            github.com/gpontesss
+        }
+    \end{flushright}
+\end{multicols}
+
+\section{Sum\'ario}
+
+Desenvolvedor de softaware. Sempre disposto a aprender com todo tipo de
+situação. Autodidata. Fotógrafo amador. Inglês avançado; alemão básico.
+
+\section{Experi\^{e}ncia}
+
+\begin{multicols}{2}
+    \noindent
+    \begin{flushleft}
+        tembici. \\
+        Desenvolvedor backend júnior
+    \end{flushleft}
+    \columnbreak
+    \begin{flushright}
+        abril de 2019 até o momento \\
+        São Paulo, SP
+    \end{flushright}
+\end{multicols}
+
+\begin{itemize}
+    \item Desenvolvimento de API REST em python para orquestracao do servico de
+    aluguel de bicicletas compartilhadas com interface pelo aplicativo mobile
+    (Bike Itau);
+    \item Elaboração de serviços em Golang utilizando arquitetura serverless com
+    Lambda, S3 e DynamoDB na AWS;
+    \item Representação de infraestrutura como código com Terraform (AWS);
+    \item Implementação e configuração de ferramentas de CI/CD para projetos
+    mantidos (CircleCI/GitHub Actions).
+\end{itemize}
+
+\begin{multicols}{2}
+    \noindent
+    \begin{flushleft}
+        Zukin Solutions Ltda. \\
+        Analista desenvolvedor júnior
+    \end{flushleft}
+    \columnbreak
+    \begin{flushright}
+        maio a setembro de 2018 \\
+        São Paulo, SP
+    \end{flushright}
+\end{multicols}
+
+\begin{itemize}
+    \item Desenvolvimento de aplicação mobile para aprovação de compras e
+    vendas, e gerência de sistema WMS integrado com ERP TOTVS Protheus;
+    \item Desenvolvimento de aplicação Web para gerência, localização e
+    comunicação com frota de caminhões;
+    \item Configuração e manutenção de servidor Debian (GNU/Linux).
+\end{itemize}
+
+\section{Habilidades}
+
+\begin{itemize}
+    \item Experi\^{e}ncia em projetos com as linguagens JavaScript, HTML, CSS,
+    Python e Golang;
+    \item Confortável com as linguagens Java e C;
+    \item Conhecimento sobre bancos de dado MySQL e MongoDB (NoSQL);
+    \item Orquestração de containers com Docker e Docker Compose;
+    \item Projeto de webservices utilizando arquitetura REST;
+    \item Configuração, manutenção e administração de sistemas GNU/Linux;
+    \item Gerência de repositórios com Git e GitHub;
+    \item Infraestrutura como código com Terraform.
+\end{itemize}
+
+\section{Projetos}
+
+\begin{itemize}
+    \item Utilidade em Python para gerar modelos pdf com informações em tabela
+    relacional;
+    \item Protótipo de um organizador de estoque e interface gráfica para
+    controle em Python;
+    \item Exemplo de stack para agregação de logs com fluentd, kibana e
+    elasticsearch (EFK) para aplicações web.
+\end{itemize}
+
+\section{Formação}
+
+\begin{multicols}{2}
+    \noindent
+    \begin{flushleft}
+        ETEC Takashi Morita \\
+        Técnico em Automação Industrial
+    \end{flushleft}
+    \columnbreak
+    \begin{flushright}
+        jan. de 2015 a dez. de 2017 \\
+        São Paulo, SP
+    \end{flushright}
+\end{multicols}
+
+
+\end{document}
