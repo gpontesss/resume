@@ -1,0 +1,147 @@
+% !TEX program = xelatex
+
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{fontspec}
+
+% Secondary color
+\definecolor{sec}{gray}{0.2}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[{\titlerule[1pt]}]
+
+% Horizontal rule command
+\newcommand{\hr}{%
+    \noindent\parbox{\linewidth}{\rule[5pt]{\textwidth}{1pt}}%
+}
+
+\renewcommand{\maketitle}{
+    \noindent
+    {\Huge\bfseries\theauthor} \\
+    \hr%
+}
+
+\setmainfont[SizeFeatures={Size=12}]{Roboto}
+
+\begin{document}
+
+\author{Lucas Barbosa de Sousa}
+
+\maketitle
+% Address and contact information
+\begin{multicols}{2}
+    \noindent%
+    \begin{flushleft}
+        \noindent%
+        \textbf{Endereço} \\
+        \color{sec}{
+            Rua dos Saburus, 58B \\
+            Santa Amélia \\
+            São Paulo, SP \\
+            22 anos
+        }
+    \end{flushleft}
+    \columnbreak
+    \begin{flushright}
+        \noindent
+        \textbf{Contato} \\
+        \color{sec}{
+            +55 88 9378--8298 \\
+            lbdsask@gmail.com
+        }
+    \end{flushright}
+\end{multicols}
+
+\section{Sum\'ario}
+
+Sou proativo, gosto de aprender, tenho facilidade para me relacionar e realizar
+tarefas em grupo. Tenho conhecimento em manutenção de computadores e sistemas.
+
+\section{Experi\^{e}ncia}
+
+\begin{itemize}
+    \item Proficiência com softwares \textit{Microsoft Word, Excel, PowerPoint,
+        Outlook e Access};
+    \item Configuração de sistema e ambiente \textit{GNU/Linux};
+    \item Montagem e manutenção de computadores;
+    \item Instalação e configuração de redes internas;
+    \item Leitura e elaboração de projetos de instalações elétricas;
+    \item Analista de Suporte de Hardware e Redes.
+\end{itemize}
+
+\section{Atividades Extras}
+
+\begin{itemize}
+    \item Mediador de leitura para crianças em escolas do governo;
+    \item Elaboração e realização de instalação elétrica residencial;
+    \item Empreendimento autônomo com manutenção de computadores e redes.
+\end{itemize}
+
+\section{Formação}
+
+\begin{multicols}{2}
+    \noindent
+    \begin{flushleft}
+        \textbf{\textit{Data Byte}} \\
+        \textit{Analista de Suporte de Hardware e Redes}
+    \end{flushleft}
+    \columnbreak{}
+    \begin{flushright}
+        \textit{formado em abril de 2018} \\
+        \textit{São Paulo, SP}
+    \end{flushright}
+\end{multicols}
+
+\begin{itemize}
+    \item Como projeto principal, participei na reformulação do projeto das
+        instalações de rede da unidade. A atividade foi realizada em grupo, e
+        ainda opera na unidade como parte funcional da instalação.
+    \item Durante o curso foi feita a recuperação de diversas peças de um
+        microcomputador. O resultado foi um microcomputador completo e operante.
+\end{itemize}
+
+\begin{multicols}{2}
+    \noindent
+    \begin{flushleft}
+        \textbf{\textit{Data Byte}} \\
+        \textit{Pacote Office}
+    \end{flushleft}
+    \columnbreak{}
+    \begin{flushright}
+        \textit{formado em agosto de 2018} \\
+        \textit{São Paulo, SP}
+    \end{flushright}
+\end{multicols}
+
+Microsoft Word, Excel, PowerPoint, OutLook e Access.
+
+
+\begin{multicols}{2}
+    \noindent
+    \begin{flushleft}
+        \textbf{\textit{Data Byte}} \\
+        \textit{Segurança eletrônica}
+    \end{flushleft}
+    \columnbreak{}
+    \begin{flushright}
+        \textit{formado em novembro de 2019} \\
+        \textit{São Paulo, SP}
+    \end{flushright}
+\end{multicols}
+
+\begin{itemize}
+    \item Como projeto principal, participei na reformulação do projeto das
+        instalações de segurança da unidade. A atividade foi realizada em grupo,
+        e ainda opera na unidade como parte funcional da instalação.
+    \item Durante o curso foi feito testes e instalações.
+\end{itemize}
+
+\end{document}

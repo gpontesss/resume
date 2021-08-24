@@ -2,7 +2,7 @@ OUTDIR = out
 TEX = xelatex -output-directory=$(OUTDIR)
 
 .PHONY: all
-all: $(OUTDIR)/gpontesss.pdf
+all: $(OUTDIR)/gpontesss.pdf $(OUTDIR)/lbds.pdf
 
 $(OUTDIR)/%.pdf: %.tex | $(OUTDIR)
 	@$(TEX) $< -o $@
